@@ -37,3 +37,17 @@ func costOf(sign: String) -> Int {
 }
 
 costOf(sign: buildSign(for: birthday, name: "Grandma"))
+
+
+
+
+
+let a = 1
+let b : Float = 1.2
+let c = 1.7
+
+let sum = Double(a) + Double(b) + c
+// tuples
+
+
+
