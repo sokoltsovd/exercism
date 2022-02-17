@@ -13,9 +13,10 @@ func getCard(at index: Int, from stack: [Int]) -> Int {
  */
 
 func setCard(at index: Int, in stack: [Int], to newCard: Int) -> [Int] {
-    var newStack = stack
-    newStack[index] = newCard
-    return newStack
+    guard index >= 0, index < stack.count else { return stack }
+    var result = stack
+    result.replaceSubrange(index..<index + 1, with: [newCard])
+    return result
 }
 
 /*
@@ -33,9 +34,10 @@ func insert(_ newCard: Int, atTopOf stack: [Int]) -> [Int] {
  */
 
 func removeCard(at index: Int, from stack: [Int]) -> [Int] {
-    var newStack = stack
-    newStack.remove(at: index)
-    return newStack
+    guard index >= 0, index < stack.count else { return stack }
+    var result = stack
+    result.remove(at: index)
+    return result
 }
 
 /*
@@ -43,5 +45,49 @@ func removeCard(at index: Int, from stack: [Int]) -> [Int] {
  */
 
 func removeTopCard(_ stack: [Int]) -> [Int] {
-  fatalError("Please implement the removeTopCard(_) function")
+    var newStack = stack
+    newStack.removeLast()
+    return newStack
+}
+
+/*
+ Implement the function insert(_:atBottomOf:) that returns a copy of the stack with the new card provided added to the bottom of the stack.
+ */
+
+func insert(_ newCard: Int, atBottomOf stack: [Int]) -> [Int] {
+    var newStack = stack
+    newStack.insert(newCard, at: 0)
+    return newStack
+}
+
+/*
+ Implement the function removeBottomCard(_:) that returns a copy of the stack which has had the card at the bottom of the stack removed. If the given stack is empty, the original stack should be returned, unchanged.
+ */
+
+func removeBottomCard(_ stack: [Int]) -> [Int] {
+    var newStack = stack
+    newStack.removeFirst()
+    return newStack
+}
+
+/*
+Implement the function checkSizeOfStack(_:_:) that checks whether the size of the stack is equal a given stackSize or not.
+*/
+
+func checkSizeOfStack(_ stack: [Int], _ size: Int) -> Bool {
+    stack.count == size
+}
+
+/*
+ Implement the function evenCardCount(_:) that steps through the stack and count the number of even cards in it.
+ */
+
+func evenCardCount(_ stack: [Int]) -> Int {
+    var count = 0
+    for i in stack {
+        if i.isMultiple(of: 2) {
+            count += 1
+        }
+    }
+    return count
 }
