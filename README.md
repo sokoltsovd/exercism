@@ -15,3 +15,6 @@ Coding exercises
 
 5. [Secret Agent Double-Null0111](https://github.com/dmitrysokoltsov/exercism/tree/master/SecretAgent.playground)
 - Your mission, should you choose to accept it, is to write a pair of tools to help you infiltrate UMBRA (United Minions Being Really Awful) headquarters and retrieve the plans for their latest really awful scheme. There are two tools you will need to carry out this mission.
+
+6. Santa's Swifty Helper
+- You are an elf working in Santa Claus' logistics division and you have been given a pair of tasks from the boss for upgrading the system's software.
