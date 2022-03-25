@@ -19,5 +19,8 @@ Coding exercises
 6. [Magician](https://github.com/dmitrysokoltsov/exercism/tree/master/Magician_in_Training.playground)
 - As a magician-to-be, Elyse needs to practice some basics. She has a stack of cards that she wants to manipulate.
 
-7. Santa's Swifty Helper
+7. [Santa's Swifty Helper](https://github.com/dmitrysokoltsov/exercism/tree/master/Santa_Swifty_Helper.playground)
 - You are an elf working in Santa Claus' logistics division and you have been given a pair of tasks from the boss for upgrading the system's software.
+
+8.[Slice Sizing](https://github.com/dmitrysokoltsov/exercism/tree/master/Slice_Sizing.playground)
+- You have a number of pizza slice shops in your town and you want to write a webapp that will let you compare two different pizza configurations to let you know who will give you the bigger slice.
